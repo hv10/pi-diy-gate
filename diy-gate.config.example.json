@@ -1,0 +1,9 @@
+{
+  "enabled": true,
+  "judgeDifficulty": true,
+  "model": "anthropic/claude-sonnet-4-5",
+  "validRejectEvery": 5,
+  "validRandomRejectProbability": 0.01,
+  "difficultRejectEvery": 10,
+  "visibleFeedback": true
+}
