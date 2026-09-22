@@ -1,11 +1,25 @@
 # pi-diy-gate
 
-A Pi extension that runs on each user request, asks the active model whether the request is easy enough to do alone, and sometimes blocks it with a self-learning prompt.
+A Pi extension that runs on each user request, asks the active model whether the request is easy enough to do alone, 
+and sometimes blocks it with a self-learning prompt.
+
+## Where the idea stems from
+
+This package exists because of the MIT Media Labs observation that LLM use decreases the ownership of content produced
+and led to lower rates of remembering the contents of the produced work.[^mit]
+
+[^mit]: [Blog: MIT Media Lab - Your Brain in ChatGPT](https://www.media.mit.edu/publications/your-brain-on-chatgpt/), 
+[Paper: arxiv](https://arxiv.org/abs/2506.08872)
+
+To mitigate this this package enforces a scheduled + random + difficulty gated rejection of requests to the agent,
+nudging the user to solve the task themselves instead. 
+The idea for this is loosely inspired by training and certification procedures in the medical and aviation fields.
+There it is not uncommon to have to regularly retake courses to prevent unlearning.
 
 ## Install
 
 ```bash
-pi install pi-diy-gate
+pi install https://github.com/hv10/pi-diy-gate.git
 ```
 
 ## Config
